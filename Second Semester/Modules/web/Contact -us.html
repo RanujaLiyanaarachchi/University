@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> B U G A T T I </title>
+	   <link rel="icon" type="image/png" href="images/Untitled (3).png"/>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+
+  <style>
+        /* CSS styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+	  
+body
+{
+background-image:url("images/4.9.webp");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position:center;
+}
+
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .service {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(34, 34, 34, 0.8);
+            border-radius: 10px;
+            position: relative; /* Added position property */
+            z-index: 1; /* Ensure content is displayed above the background */
+        }
+
+        .service h2 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        .service p {
+            margin-bottom: 10px;
+        }
+
+        /* Overlay styles */
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url(your-image-url.jpg) no-repeat center center fixed;
+            background-size: cover;
+            filter: blur(10px); /* Adjust the blur intensity as needed */
+            z-index: -1;
+        }
+	  
+	
+
+		
+	  
+	  
+	  section.logoslider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.logoslider-innerwrap {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+header.licensepartner-headline {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+div.logoslider-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div.logoslider-slide {
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+img.lazyload {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  section.logoslider {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  div.logoslider-innerwrap {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  header.licensepartner-headline {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  div.logoslider-slider {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  div.logoslider-slide {
+    width: 100%;
+    height: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  img.lazyload {
+    display: block;
+  }
+}
+	
+		  
+		  
+	::-webkit-selection {
+  background-color: white;
+  color: black;
+}
+	  
+
+	  
+  .page-footer {
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-networks-nav {
+  margin-bottom: 10px;
+}
+
+.footer-networks-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-networks-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-networks-nav li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-networks-nav li a:hover {
+  color: #000;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.footer-shortlinks-nav {
+  margin-top: 10px;
+}
+
+.footer-shortlinks-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-shortlinks-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-shortlinks-nav li a {
+  color: #666;
+
+  text-decoration: none;
+}
+
+.footer-shortlinks-nav li a:hover {
+  color: #000;
+}
+
+	
+	  
+	  
+	  
+	   
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color:  rgba(34, 34, 34, 0.8);
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+
+    form {
+      background-color:  rgba(34, 34, 34, 0.8);
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid  rgba(34, 34, 34, 0.8);
+      border-radius: 4px;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background-color:  #333;
+      color:  #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    /* Contact Information Section */
+    .contact-info {
+      margin-top: 30px;
+      background-color:  rgba(34, 34, 34, 0.8);
+      padding: 20px;
+      border-radius: 4px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  
+	  
+	  
+	  
+    </style>
+	  
+  </head>
+  <body background="images/ser.webp">
+  	<!-- body code goes here -->
+
+	    <div class="container-fluid">
+		
+	  <nav style="background-color: black;" class="navbar fixed-top navbar-expand-lg"> <a class="navbar-brand" href="index.html" style="color: white;">&nbsp;&nbsp;<img src="images/Navigation bar Logo.png" alt="Placeholder image" width="86" class="img-fluid rounded">&nbsp;<b>&nbsp; B U G A T T I</b></a>
+  	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1"></div>
+  	      <ul class="navbar-nav mr-auto">
+		  
+		  		      <li class="nav-item"> <a class="nav-link" href="All.html" style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a> </li>
+		      <li class="nav-item"> <a class="nav-link" href="Chiron.html" style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Centodieci.html" style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Divo.html" style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="La voiture noire.html" style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Veyron.html" style="color: white;"><b>&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="#" style="color: white;"><b>Contact -  US&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		  </ul>
+      </nav>
+		
+  </div><br><br><br><br>
+	  
+	 
+<div class="container">
+  <div class="service">	  
+
+        <h1 style="color: white"><center><b>Contact - Us</b></center></h1>
+   
+</div>
+    
+        <div class="service">
+             <div class="container">
+  
+    <div>
+      <h2>Get in Touch</h2>
+      <p style="color: white">Feel free to reach out to us with any questions, concerns, or feedback.</p>
+
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+			
+  <script>
+    // JavaScript for form submission
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      // Add your form submission logic here
+      // For example, you can use AJAX to send the form data to a server-side script
+    });
+  </script>
+			
+        </div>
+
+        <div class="service">
+          <div class="contact-info">
+      <h2><font size="4"><b>Contact Information:</b></font> </h2>
+
+      <p style="color: white"><br>
+        <strong><img src="images/ww3.png" alt="Placeholder image" width="20" class="img-fluid">&nbsp;  Address&nbsp; &nbsp;:</strong> &nbsp; BUGATTI AUTOMOBILES, 1, Chateau St. Jean, 67120 Molsheim, France. </p>
+
+      <p style="color: white">
+        <strong><img src="images/ww1.png" alt="Placeholder image" width="20" class="img-fluid">&nbsp; Phone&nbsp; &nbsp; &nbsp; :</strong> &nbsp; &nbsp;+33- 388-045600</p>
+
+      <p style="color: white">
+        <strong><img src="images/ww2.png" alt="Placeholder image" width="20" class="img-fluid">&nbsp; Emai&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;:&nbsp; &nbsp;</strong> info@bugatti.com
+      </p>
+    </div>
+        </div>
+
+
+
+
+  </div>
+	  
+	  
+	  
+  <footer class="page-footer">
+
+<nav class="footer-networks-nav col-lg-12"><br>
+	
+	        <ul>
+	          <li class="facebook"><a rel="noopener noreferrer" href="https://www.facebook.com/bugatti/"
+                        title="Bugatti on Facebook" target="_blank"><img src="images/nn1.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="twitter"><a rel="noopener noreferrer" href="https://twitter.com/Bugatti"
+                        title="Bugatti on Twitter" target="_blank" style="color: white;"><img src="images/nn2.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="instagram"><a rel="noopener noreferrer" href="https://instagram.com/bugatti"
+                        title="Bugatti on Instagram" target="_blank" style="color: white;"><img src="images/nn3.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="pinterest"><a rel="noopener noreferrer" href="https://www.pinterest.de/bugatti/"
+                        title="Bugatti on Pinterest" target="_blank" style="color: white;"><img src="images/nn4.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="youtube"><a rel="noopener noreferrer" href="https://www.youtube.com/BugattiSocial"
+                        title="Bugatti on YouTube" target="_blank" style="color: white;"><img src="images/nn5.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="linkedin"><a rel="noopener noreferrer"
+                        href="http://www.linkedin.com/company/bugatti-automobiles-s-a-s-" title="Bugatti on LinkedIn"
+                        target="_blank" style="color: white;"><img src="images/nn6.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+            </ul>
+          </nav>
+			
+<nav class="footer-shortlinks-nav">
+      <ul>
+				<li><a href="Gallery.html" title="GALLERY" style="color: white;">GALLERY</a></li>
+                <li><a href="Bugatti Chiron.html" title="CHIRON" style="color: white;">CHIRON</a></li>
+                <li><a href="Bugatti Centodieci.html" title="CENTODIECI" style="color: white;">CENTODIECI</a></li>
+                <li><a href="Bugatti Divo.html" title="DIVO" style="color: white;">DIVO</a></li>
+                <li><a href="Bugatti La voiture noire.html" title="LA VOITURE NOIRE" style="color: white;">LA VOITURE NOIRE</a></li>
+                <li><a href="Bugatti Veyron.html" title="VEYRON" style="color: white;">VEYRON</a></li>
+                <li><a href="Bugatti W16 mistral.html" title="W16 MISTRAL" style="color: white;">W16 MISTRAL</a></li>
+                <li><a rel="noopener noreferrer" href="https://www.nsbm.ac.lk/" title="Bugatti on NSBM" target="_blank" style="color: white">NSBM Green University</a></li>
+     </ul>
+</nav>
+					
+</footer>
+  
+<footer style="background-color: rgba(0,0,0,1.00)">
+	  
+  <div style="color: black" class="row">
+          <div class="col-lg-6">&nbsp;&nbsp;<a href="Index.html"><img src="images/Navigation bar Logo.png" alt="Placeholder image" width="60" height="40" class="img-fluid"><br></a></div>
+          <div class="col-lg-6"><p  style="color: white;" align="right">
+			  © 2023 Bugatti. All rights reserved.&nbsp;&nbsp;</p></div>
+	</div>
+	  </footer>
+	  
+	 
+	  
+	  
+
+  <script>
+        // JavaScript code (if needed)
+        // You can add interactivity or additional functionality using JavaScript
+    </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
