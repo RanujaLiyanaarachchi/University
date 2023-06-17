@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> B U G A T T I </title>
+	   <link rel="icon" type="image/png" href="images/Untitled (3).png"/>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	
+	  
+	  <style>
+		  
+    body {
+        background-color: #070506; /* Replace #FF0000 with your desired color code */
+    }
+		  
+
+    /* Style for the container */
+    .image-container {
+      position: relative;
+      display: inline-block;
+    }
+    
+    /* Style for the image */
+    .image-container img {
+      display: block;
+      height: auto;
+    }
+    
+    /* Style for the text overlay */
+     .image-container::before {
+  content: "B U G A T T I";
+  position: absolute;
+  top: 18%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 8px 2px 8px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.image-container::after {
+  content: "CENTODIECI";
+  position: absolute;
+  top: 28%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: Segoe, "sans-serif";
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 8px 2px 8px rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+ 
+		  
+section.logoslider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.logoslider-innerwrap {
+  width: 400px;
+  height: 400px;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+header.licensepartner-headline {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 0;
+}
+
+div.logoslider-slider {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+div.logoslider-slide {
+  width: 100%;
+  height: 100%;
+  float: left;
+  margin-right: 10px;
+}
+
+img.lazyload {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  section.logoslider {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  div.logoslider-innerwrap {
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding: 0;
+  }
+
+  header.licensepartner-headline {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  h2 {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  div.logoslider-slider {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+  }
+
+  div.logoslider-slide {
+    width: 100%;
+    height: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  img.lazyload {
+    display: block;
+  }
+}
+	
+		  
+		  
+	::-webkit-selection {
+  background-color: white;
+  color: black;
+}
+	  
+
+	  
+  .page-footer {
+  background-color: #000000;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.footer-networks-nav {
+  margin-bottom: 10px;
+}
+
+.footer-networks-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-networks-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-networks-nav li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-networks-nav li a:hover {
+  color: #000;
+}
+
+.copyright {
+  margin-top: 10px;
+}
+
+.footer-shortlinks-nav {
+  margin-top: 10px;
+}
+
+.footer-shortlinks-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-shortlinks-nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-shortlinks-nav li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.footer-shortlinks-nav li a:hover {
+  color: #000;
+}
+
+		  		  
+</style>
+	  
+  </head>
+  <body>
+  	<!-- body code goes here -->
+
+    <div class="container-fluid">
+		
+	 	<nav style="background-color: black;" class="navbar fixed-top navbar-expand-lg"> <a class="navbar-brand" href="index.html" style="color: white;">&nbsp;&nbsp;<img src="images/Navigation bar Logo.png" alt="Placeholder image" width="86" class="img-fluid rounded">&nbsp;<b>&nbsp; B U G A T T I</b></a>
+  	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+			
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1"></div>
+  	      <ul class="navbar-nav mr-auto">
+		  
+		      <li class="nav-item"> <a class="nav-link" href="Bugatti Chiron.html" style="color: white;"><b>CHIRON&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Bugatti Centodieci.html" style="color: white;"><b>CENTODIECI&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Bugatti Divo.html" style="color: white;"><b>DIVO&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Bugatti La voiture noire.html" style="color: white;"><b>LA VOITURE NOIRE&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Bugatti Veyron.html" style="color: white;"><b>VEYRON&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+		      <li class="nav-item"> <a class="nav-link" href="Bugatti W16 mistral.html" style="color: white;"><b>W16 MISTRAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+			  
+		  </ul>
+      </nav>
+	</div>
+	 
+	  <div class="image-container">
+	  
+  <img src="images/My project (7).jpg" class="img-fluid" alt="Placeholder image"><br><br><br><br>
+	  </div>
+	  
+	  <h1> <b> <center><p style="color: white;"> B U G A T T I&nbsp; &nbsp; C E N T O D I E C I</p> 
+	    </center> </b> </h1><br><br>
+	  
+	  <div class="container">
+		  
+		  <p align="justify" style="color: white;">Introducing the Bugatti Centodieci, a remarkable and highly exclusive hypercar that pushes the boundaries of automotive engineering and craftsmanship. Born as a tribute to the legendary Bugatti EB110, the Centodieci encapsulates the spirit of the past while embracing the future of automotive design and performance.</p><br>
+
+<p align="justify" style="color: white;">With its name translating to "one hundred and ten" in Italian, the Bugatti Centodieci celebrates Bugatti's 110th anniversary, paying homage to its predecessor and the rich heritage of the brand. Limited to a production run of only ten units, this hypercar represents the pinnacle of exclusivity and rarity.</p><br>
+
+<p align="justify" style="color: white;">From the moment it graces your presence, the Bugatti Centodieci captivates with its breathtaking design. The fusion of retro-inspired elements and futuristic aesthetics creates an unparalleled visual experience. Its low and aggressive stance, accentuated by sharp lines and aerodynamic contours, exudes power and elegance. The iconic Bugatti horseshoe-shaped front grille proudly adorns the front, showcasing the brand's distinctive design DNA.</p><br>
+
+<p align="justify" style="color: white;">Beneath the Centodieci's striking exterior lies an awe-inspiring heart of performance. The mighty 8.0-liter quad-turbocharged W16 engine, shared with the Bugatti Chiron, unleashes an astonishing 1,600 horsepower. This engineering marvel propels the Centodieci from 0 to 60 mph in a mere 2.4 seconds, and its top speed reaches an exhilarating 236 mph (380 km/h). Such mind-bending acceleration and velocity affirm Bugatti's relentless pursuit of speed and power.</p><br>
+
+<p align="justify" style="color: white;">Crafted with meticulous attention to detail, the Bugatti Centodieci offers an unparalleled driving experience. Its lightweight construction, advanced aerodynamics, and cutting-edge suspension system merge seamlessly to deliver exceptional handling and performance. Every aspect of the Centodieci is optimized for unparalleled precision and control, elevating the driver's connection to the machine to unprecedented levels.</p><br>
+
+<p align="justify" style="color: white;">Stepping inside the Bugatti Centodieci reveals a world of luxury and craftsmanship. The cabin envelops you in opulence, blending premium materials such as exquisite leather and carbon fiber accents. The sculpted seats provide both comfort and support, ensuring an enjoyable experience, whether cruising along the open road or carving through corners at high speeds. Advanced technologies and features further enhance the driving experience, seamlessly integrating performance, connectivity, and convenience.</p><br>
+
+<p align="justify" style="color: white;">Owning a Bugatti Centodieci signifies membership to an elite fraternity of automotive enthusiasts who appreciate the extraordinary. With its limited production and unrivaled performance, this hypercar stands as a testament to Bugatti's legacy of innovation and excellence. The Bugatti Centodieci represents the pinnacle of automotive artistry, where design, engineering, and craftsmanship converge to create an unparalleled driving experience that will leave an indelible mark on the automotive landscape.</p><br>
+
+<p align="justify" style="color: white;">As a testament to its exclusivity, the Bugatti Centodieci is a highly sought-after collector's item. Each of the ten units produced is meticulously crafted with utmost attention to detail, ensuring that owning a Centodieci is an experience reserved for the privileged few. The rarity and prestige associated with the Centodieci elevate its desirability and make it an investment that transcends the realm of ordinary automobiles.</p><br>
+
+<p align="justify" style="color: white;">Beyond its individuality, the Bugatti Centodieci embodies the relentless pursuit of perfection that defines the Bugatti brand. With each carefully calibrated component and every precisely engineered detail, this hypercar represents the culmination of years of automotive innovation and expertise. The Centodieci is a testament to the dedication and passion of the designers, engineers, and craftsmen who brought it to life.</p><br>
+
+<p align="justify" style="color: white;">The Bugatti Centodieci is not just a machine; it is a work of art on wheels. It is a symphony of power, performance, and elegance, orchestrated to provide an unparalleled driving experience.</p><br>
+
+<p align="justify" style="color: white;">From the roar of its mighty engine to the seamless harmony of its design, the Centodieci captivates all senses and transcends the boundaries of what is possible in the world of automotive
+engineering.</p><br>
+
+<p align="justify" style="color: white;">In conclusion, the Bugatti Centodieci is an exclusive masterpiece that pays homage to the past while embracing the future. With its limited production, breathtaking design, mind-bending performance, and meticulous craftsmanship, the Centodieci represents the pinnacle of automotive excellence. It is a symbol of prestige, innovation, and sheer automotive magnificence—a true testament to the artistry and engineering prowess of Bugatti.</p><br><br>
+		  
+	  </div>
+
+  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel" style="background-color: grey">
+    <ol class="carousel-indicators">
+      	
+      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+	  <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
+	  <li data-target="#carouselExampleIndicators2" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="6"></li>
+	  <li data-target="#carouselExampleIndicators2" data-slide-to="7"></li>
+      <li data-target="#carouselExampleIndicators2" data-slide-to="8"></li>
+	  <li data-target="#carouselExampleIndicators2" data-slide-to="9"></li>
+      
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active"> <img class="d-block mx-auto img-fluid" src="images/2.1.webp" alt="First slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.2.webp" alt="Second slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.3.webp" alt="Third slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.4.webp" alt="Fourth slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+	  <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.5.webp" alt="Fifth slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+	  <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.6.webp" alt="Sixth slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+       <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.7.webp" alt="Seventh slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.8.webp" alt="Eighth slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+      <div class="carousel-item"> <img class="d-block mx-auto img-fluid" src="images/2.9.webp" alt="Nighth slide">
+        <div class="carousel-caption">
+
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div><br><br><br><br>
+<div class="container-fluid">
+  
+  <div class="row">
+  <div class="col-lg-6"><img src="images/22.1.webp" class="img-fluid" alt="Placeholder image"></div>
+	  <div class="col-lg-6">
+	    <p>&nbsp;</p>
+	    <p>&nbsp;</p>
+	    <p style="color: white">&nbsp;</p>
+		  <p style="color: white"><b><font size="14">CELEBRATING AN ICON</font></b></p>
+	    <br>
+<p style="color: white" align="justify">With the Centodieci, Bugatti pays tribute to an extraordinary part of its long and rich history: the EB110. Inspired by the legendary supercar of the 1990s, Bugatti once again pushes the boundaries of design, technology and performance with this exclusive and magnificent small series. Limited to ten units, the Centodieci is not only a homage to and modern reinterpretation of the EB110, but it’s also a fascinating manifesto connected with the brand values of excellence, courage and dedication. &nbsp;</p><br><br><br><br><br><br>
+	  </div>
+  </div>
+	  
+  
+  <div class="row">
+    <div class="col-lg-6">
+      <p style="color: white">&nbsp;</p>
+
+      <p style="color: white"><b><font size="14"></font></b></p>
+      <p style="color: white">&nbsp;</p>
+      <p style="color: white">&nbsp;</p>
+      <p style="color: white"><b><font size="14">SHOOTING STAR</font></b></p><br>
+		
+<p style="color: white" align="justify">Back in 1991 the EB110 catapulted Bugatti to the pinnacle of the automotive world once again after a hiatus of over three decades. During this lapse Bugatti lived on in the hearts and memories of many enthusiasts, collectors and connoisseurs. Romano Artioli was one of them. In 1987, this Italian entrepreneur and Bugatti collector bought the rights of the brand with one strong commitment: to build the best and fastest supercar in the world, and put Bugatti back where it belonged and where it still is today.&nbsp;</p><br><br><br><br><br><br>
+    </div>
+    <div class="col-lg-6"><img src="images/22.2.webp" class="img-fluid" alt="Placeholder image"></div>
+  </div>
+	  
+  
+  <div class="row">
+	<div class="col-lg-6"><img src="images/22.3.webp" class="img-fluid" alt="Placeholder image"></div>
+	<div class="col-lg-6">
+	  <p style="color: white">&nbsp;</p>
+	  <p style="color: white">&nbsp;</p>
+	  <p style="color: white">&nbsp;</p>
+	  <p style="color: white"><b><font size="14">ECHOES OF THE FUTURE</font></b></p>
+	  <br>
+	  <p style="color: white" align="justify">One of the main challenges of the Bugatti design team was not to be captivated too much by the design of the historic vehicle and work solely in retrospect, but to create a modern interpretation of the shapes and technology of that time. The result is simply stunning: even sportier and more extreme than the Chiron and Divo, yet elegant and timeless like the La Voiture Noire, the Centodieci is a one-of-a-kind Bugatti for the connoisseur.&nbsp;</p><br><br><br><br><br><br>
+	</div>
+  </div>
+	  
+  
+  <div class="row">
+    <div class="col-lg-6">
+      <p style="color: white">&nbsp;</p>
+      <p style="color: white">&nbsp;</p>
+      <p style="color: white">&nbsp;</p>
+      <p style="color: white"><b><font size="14">BODY AND SOUL</font></b></p><br>
+<p style="color: white" align="justify">Bugatti designers and engineers faced several technical challenges during the development of the Centodieci. Transporting the classic look of a supercar of the late 1980s into the new millennium and respecting its spirit without copying was technically complex, to say the least. Additionally, the completely different aesthetic appearance had to fit in perfect harmony with the aerodynamic and thermal requirements of the potent 16-cylinder power train, now with an impressive output of 1,600 PS.&nbsp;</p>
+    </div>
+    <div class="col-lg-6"><img src="images/22.4.webp" class="img-fluid" alt="Placeholder image"></div>
+  </div>
+	  
+</div><br>
+	  
+
+	  
+	  
+<div id="selectionArea">
+  <div class="container" align="center">
+	  <br><br>
+	<header class="licensepartner-headline logoslider-headline">
+       <font size="20"> <span class="headline-first">Fuel consumption</span> <span class="subheadline">- Centodieci (From 2020)</span></font>                       
+    </header><br><br>
+	  
+<div class="row">
+    <div class="col-lg-4"><img src="images/i1.webp" class="img-fluid" alt="Placeholder image"></div>
+	  <div class="col-lg-4"><img src="images/i2.webp" class="img-fluid" alt="Placeholder image"></div>
+	  <div class="col-lg-4"><img src="images/i3.webp" class="img-fluid" alt="Placeholder image"></div>
+  </div><br><br>
+	  
+	  
+	<header class="licensepartner-headline logoslider-headline">
+       <font size="20"> <span class="headline-first">Fuel consumption</span> <span class="subheadline">- Centodieci (From 2021)</span></font>                       
+    </header><br><br>
+	  
+<div class="row">
+    <div class="col-lg-4"><img src="images/i1.webp" class="img-fluid" alt="Placeholder image"></div>
+	  <div class="col-lg-4"><img src="images/i2.webp" class="img-fluid" alt="Placeholder image"></div>
+	  <div class="col-lg-4"><img src="images/i3.webp" class="img-fluid" alt="Placeholder image"></div>
+  </div><br><br>
+   
+	  
+	  
+  </div>
+</div>
+<style>
+  #selectionArea {
+    background-color: #ffffff;
+  }
+</style>
+
+ 
+          
+
+  <footer class="page-footer">
+
+<nav class="footer-networks-nav col-lg-12"><br>
+	
+	        <ul>
+	          <li class="facebook"><a rel="noopener noreferrer" href="https://www.facebook.com/bugatti/"
+                        title="Bugatti on Facebook" target="_blank"><img src="images/nn1.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="twitter"><a rel="noopener noreferrer" href="https://twitter.com/Bugatti"
+                        title="Bugatti on Twitter" target="_blank" style="color: white;"><img src="images/nn2.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="instagram"><a rel="noopener noreferrer" href="https://instagram.com/bugatti"
+                        title="Bugatti on Instagram" target="_blank" style="color: white;"><img src="images/nn3.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="pinterest"><a rel="noopener noreferrer" href="https://www.pinterest.de/bugatti/"
+                        title="Bugatti on Pinterest" target="_blank" style="color: white;"><img src="images/nn4.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="youtube"><a rel="noopener noreferrer" href="https://www.youtube.com/BugattiSocial"
+                        title="Bugatti on YouTube" target="_blank" style="color: white;"><img src="images/nn5.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+	          <li class="linkedin"><a rel="noopener noreferrer"
+                        href="http://www.linkedin.com/company/bugatti-automobiles-s-a-s-" title="Bugatti on LinkedIn"
+                        target="_blank" style="color: white;"><img src="images/nn6.png" alt="Placeholder image" width="60" class="img-fluid"></a></li>
+            </ul>
+          </nav>
+			
+<nav class="footer-shortlinks-nav">
+      <ul>
+				<li><a href="Gallery.html" title="GALLERY" style="color: white;">GALLERY</a></li>
+                <li><a href="Bugatti Chiron.html" title="CHIRON" style="color: white;">CHIRON</a></li>
+                <li><a href="Bugatti Centodieci.html" title="CENTODIECI" style="color: white;">CENTODIECI</a></li>
+                <li><a href="Bugatti Divo.html" title="DIVO" style="color: white;">DIVO</a></li>
+                <li><a href="Bugatti La voiture noire.html" title="LA VOITURE NOIRE" style="color: white;">LA VOITURE NOIRE</a></li>
+                <li><a href="Bugatti Veyron.html" title="VEYRON" style="color: white;">VEYRON</a></li>
+                <li><a href="Bugatti W16 mistral.html" title="W16 MISTRAL" style="color: white;">W16 MISTRAL</a></li>
+                <li><a rel="noopener noreferrer" href="https://www.nsbm.ac.lk/" title="Bugatti on NSBM" target="_blank" style="color: white">NSBM Green University</a></li>
+     </ul>
+</nav>
+					
+</footer>
+  <div class="container-fluid">
+<footer style="background-color: rgba(0,0,0,1.00)">
+	  
+  <div class="row">
+          <div class="col-lg-6">&nbsp;&nbsp;<a href="Index.html"><img src="images/Navigation bar Logo.png" alt="Placeholder image" width="60" height="40" class="img-fluid"></a></div>
+          <div class="col-lg-6"><p  style="color: white;" align="right">
+			  © 2023 Bugatti. All rights reserved.</p></div>
+  </div>
+  </footer>
+</div>	  
+	  
+	  
+	  
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+  <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
