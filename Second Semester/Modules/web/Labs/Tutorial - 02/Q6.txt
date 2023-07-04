@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirect to Google</title>
+</head>
+<body>
+
+<button id="googleButton">Google</button>
+
+<script>
+
+function handleClick() {
+    const result = confirm("Are you sure you want to go to Google?");
+    if (result) {
+        window.location.href = "https://www.google.com";
+    } else {
+        alert("You decided to stay.");
+    }
+}
+
+document.getElementById("googleButton").addEventListener("click", handleClick);
+</script>
+</body>
+</html>
