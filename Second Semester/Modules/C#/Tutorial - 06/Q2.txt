@@ -1,0 +1,85 @@
+using System;
+
+class ArrayOperations
+{
+    public static void PerformOperations(int[] array1, int[] array2)
+    {
+        int size = Math.Min(array1.Length, array2.Length);
+
+        int[] scalarSum = new int[size];
+        int[] vectorSum = new int[size];
+        int[] vectorProduct = new int[size];
+        int scalarProductSum = 0;
+
+        for (int i = 0; i < size; i++)
+        {
+            scalarSum[i] = array1[i] + array2[i];
+            vectorSum[i] = array1[i] + array2[i];
+            vectorProduct[i] = array1[i] * array2[i];
+            scalarProductSum += array1[i] * array2[i];
+        }
+
+        Console.WriteLine("Scalar Sum:");
+        DisplayArray(scalarSum);
+
+        Console.WriteLine("Vector Sum:");
+        DisplayArray(vectorSum);
+
+        Console.WriteLine("Vector Product:");
+        DisplayArray(vectorProduct);
+
+        Console.WriteLine("Scalar Product Sum: " + scalarProductSum);
+    }
+
+    private static void DisplayArray(int[] array)
+    {
+        foreach (int num in array)
+        {
+            Console.Write(num + " ");
+        }
+
+        Console.WriteLine();
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the size of array 1: ");
+        int size1 = int.Parse(Console.ReadLine());
+
+        Console.Write("Enter the size of array 2: ");
+        int size2 = int.Parse(Console.ReadLine());
+
+        int[] array1 = new int[size1];
+        int[] array2 = new int[size2];
+
+        Console.WriteLine("Enter values for array 1:");
+        ReadArrayInput(array1);
+
+        Console.WriteLine("Enter values for array 2:");
+        ReadArrayInput(array2);
+
+        Console.WriteLine("Performing array operations...");
+
+        ArrayOperations.PerformOperations(array1, array2);
+
+        Console.ReadKey();
+    }
+
+    private static void ReadArrayInput(int[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write("Value " + (i + 1) + ": ");
+            string input = Console.ReadLine();
+            int value;
+
+            if (int.TryParse(input, out value))
+                array[i] = value;
+            else
+                Console.WriteLine("Invalid input! Please enter an integer value.");
+        }
+    }
+}
