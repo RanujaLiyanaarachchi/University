@@ -1,0 +1,29 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        ConvertValues converter = new ConvertValues();
+        converter.KilometerToMeter();
+    }
+}
+
+class ConvertValues
+{
+    public void KilometerToMeter()
+    {
+        Console.Write("Enter the kilometer value: ");
+        string kilometerInput = Console.ReadLine();
+
+        if (double.TryParse(kilometerInput, out double kilometer))
+        {
+            double meter = kilometer * 1000;
+            Console.WriteLine("Meter value: " + meter);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input! Please enter a valid kilometer value.");
+        }
+    }
+}
