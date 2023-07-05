@@ -1,0 +1,41 @@
+using System;
+
+class Hello
+{
+    private void sayHello()
+    {
+        Console.WriteLine("Hello, world!");
+    }
+}
+
+
+----------------------------------------------------------------
+
+
+using System;
+
+class Program_Main
+{
+    static void Main()
+    {
+        Hello helloObject = new Hello();
+
+        // Attempting to access the private method
+        helloObject.sayHello();
+
+        Console.WriteLine("Press any key to exit...");
+        Console.ReadKey();
+    }
+}
+
+
+-----------------------------------------------------------------
+
+
+Explanation: 
+
+In C#, private methods can only be accessed within the class in which they are declared. In this case, the sayHello() method is declared as private within the Hello class. Therefore, it cannot be accessed from outside the class, such as in the Program_Main class. If you try to access the private method, you will encounter a compilation error stating that the method is inaccessible due to its protection level.
+
+By attempting to access the sayHello() method from the Program_Main class, you will receive a compilation error that says 'Hello.sayHello()' is inaccessible due to its protection level. This is expected behavior because private methods are only accessible within the class where they are declared.
+
+In order to access the sayHello() method from the Program_Main class, you can either change the access modifier of the method to public or make it internal if both classes are in the same assembly (project).

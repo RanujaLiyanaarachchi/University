@@ -1,0 +1,95 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Choose an operation:");
+        Console.WriteLine("1. Addition");
+        Console.WriteLine("2. Subtraction");
+        Console.WriteLine("3. Multiplication");
+        Console.WriteLine("4. Division");
+
+        Console.Write("Enter your choice: ");
+        string choiceInput = Console.ReadLine();
+
+        if (int.TryParse(choiceInput, out int choice))
+        {
+            double number1, number2;
+            Console.Write("Enter the first number: ");
+            string number1Input = Console.ReadLine();
+
+            Console.Write("Enter the second number: ");
+            string number2Input = Console.ReadLine();
+
+            if (double.TryParse(number1Input, out number1) && double.TryParse(number2Input, out number2))
+            {
+                CalculateValues calculator = new CalculateValues();
+                double result = 0;
+
+                switch (choice)
+                {
+                    case 1:
+                        result = calculator.Addition(number1, number2);
+                        Console.WriteLine("Result: " + result);
+                        break;
+                    case 2:
+                        result = calculator.Subtraction(number1, number2);
+                        Console.WriteLine("Result: " + result);
+                        break;
+                    case 3:
+                        result = calculator.Multiplication(number1, number2);
+                        Console.WriteLine("Result: " + result);
+                        break;
+                    case 4:
+                        if (number2 != 0)
+                        {
+                            result = calculator.Division(number1, number2);
+                            Console.WriteLine("Result: " + result);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Cannot divide by zero!");
+                        }
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice! Please choose a valid operation.");
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Invalid input! Please enter valid numbers.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Invalid choice! Please enter a valid operation number.");
+        }
+
+        Console.ReadKey();
+    }
+}
+
+class CalculateValues
+{
+    public double Addition(double number1, double number2)
+    {
+        return number1 + number2;
+    }
+
+    public double Subtraction(double number1, double number2)
+    {
+        return number1 - number2;
+    }
+
+    public double Multiplication(double number1, double number2)
+    {
+        return number1 * number2;
+    }
+
+    public double Division(double number1, double number2)
+    {
+        return number1 / number2;
+    }
+}
