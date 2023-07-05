@@ -1,0 +1,26 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter a positive integer: ");
+        string input = Console.ReadLine();
+
+        if (int.TryParse(input, out int number) && number > 0)
+        {
+            int sum = 0;
+
+            for (int i = 1; i <= number; i += 2)
+            {
+                sum += i;
+            }
+
+            Console.WriteLine("Sum of odd numbers from 1 to " + number + ": " + sum);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input! Please enter a positive integer.");
+        }
+    }
+}
