@@ -1,0 +1,25 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the first value: ");
+        string input1 = Console.ReadLine();
+
+        Console.Write("Enter the second value: ");
+        string input2 = Console.ReadLine();
+
+        if (double.TryParse(input1, out double value1) && double.TryParse(input2, out double value2))
+        {
+            double sum = value1 + value2;
+
+            Console.WriteLine("The summation of the inputs is: " + sum);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input! Please enter valid numeric values.");
+        }
+        Console.ReadKey();
+    }
+}

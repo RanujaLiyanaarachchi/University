@@ -1,0 +1,27 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the employee's salary: ");
+        string salaryInput = Console.ReadLine();
+
+        Console.Write("Enter the tax rate (in decimal form): ");
+        string taxRateInput = Console.ReadLine();
+
+        // Parse the salary and tax rate inputs to floating-point numbers
+        if (double.TryParse(salaryInput, out double salary) && double.TryParse(taxRateInput, out double taxRate))
+        {
+            // Calculate the salary after tax deduction
+            double salaryAfterTax = salary * (1 - taxRate);
+
+            Console.WriteLine("Salary after tax deduction: " + salaryAfterTax);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input! Please enter valid numeric values.");
+        }
+        Console.ReadKey();
+    }
+}

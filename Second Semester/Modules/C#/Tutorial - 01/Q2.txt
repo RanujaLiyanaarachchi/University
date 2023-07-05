@@ -1,0 +1,24 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Console.Write("Enter the radius of the circle: ");
+        string radiusInput = Console.ReadLine();
+
+        if (double.TryParse(radiusInput, out double radius))
+        {
+
+            double area = Math.PI * Math.Pow(radius, 2);
+
+            Console.WriteLine("The area of the circle is: " + area);
+        }
+        else
+        {
+            Console.WriteLine("Invalid input! Please enter a valid radius.");
+        }
+
+        Console.ReadKey();
+    }
+}
